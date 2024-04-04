@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <section>
         <h2>Current timezone</h2>
         <p>Europe/London</p>
@@ -18,5 +18,5 @@ export default function Footer() {
         <p>42</p>
       </section>
     </footer>
-  )
+  );
 }
