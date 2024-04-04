@@ -1,6 +1,7 @@
 import './App.css'
 import Quote from './components/Quote'
 import StatusMessage from "./components/StatusMessage.tsx";
+import MoreLessButton from "./components/MoreLessButton.tsx";
 
 function App() {
     return (
@@ -8,8 +9,7 @@ function App() {
             <Quote/>
             <StatusMessage/>
 
-            More
-            Less
+            <MoreLessButton/>
 
             Current timezone
             Day of the year
