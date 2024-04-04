@@ -1,13 +1,12 @@
 import './App.css'
 import Quote from './components/Quote'
+import StatusMessage from "./components/StatusMessage.tsx";
 
 function App() {
     return (
         <>
             <Quote/>
-            , it's currently
-
-            in
+            <StatusMessage/>
 
             More
             Less
