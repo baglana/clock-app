@@ -2,19 +2,19 @@ import './App.css'
 import Quote from './components/Quote'
 import StatusMessage from "./components/StatusMessage.tsx";
 import MoreLessButton from "./components/MoreLessButton.tsx";
-import MoreInfo from "./components/MoreInfo.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
-    return (
-        <>
-            <Quote/>
-            
-            <StatusMessage/>
+  return (
+    <>
+      <Quote/>
 
-            <MoreLessButton/>
-            <MoreInfo/>
-        </>
-    )
+      <StatusMessage/>
+
+      <MoreLessButton/>
+      <Footer/>
+    </>
+  )
 }
 
 export default App
