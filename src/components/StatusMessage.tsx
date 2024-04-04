@@ -4,10 +4,10 @@ import Location from "./Location.tsx"
 
 export default function StatusMessage() {
     return (
-        <div>
+        <main>
             <Greeting/>
             <Time/>
             <Location/>
-        </div>
+        </main>
     )
 }
