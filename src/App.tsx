@@ -9,10 +9,10 @@ function App() {
     <>
       <div className="container">
         <Quote />
-
-        <StatusMessage />
-
-        <MoreLessButton />
+        <main>
+          <StatusMessage />
+          <MoreLessButton />
+        </main>
       </div>
       <Footer />
     </>
