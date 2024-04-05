@@ -1,9 +1,9 @@
 import RefreshButton from "./RefreshButton.tsx";
-import "../styles/quote.css";
+import "../styles/Quote.css";
 
 export default function Quote() {
   return (
-    <article>
+    <article className="quote">
       <blockquote>
         <p>
           “The science of operations, as derived from mathematics more

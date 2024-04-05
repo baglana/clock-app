@@ -1,11 +1,11 @@
 #root.light {
-  --bg-image: url("../public/desktop/bg-image-daytime.jpg");
+  --bg-image: url("../public/mobile/bg-image-daytime.jpg");
   --color-footer: hsla(0, 0%, 19%, 1);
   --color-footer-bg: hsla(0, 0%, 100%, 0.75);
 }
 
 #root.dark {
-  --bg-image: url("../public/desktop/bg-image-nighttime.jpg");
+  --bg-image: url("../public/mobile/bg-image-nighttime.jpg");
   --color-footer: hsla(0, 0%, 100%, 1);
   --color-footer-bg: hsla(0, 0%, 0%, 0.75);
 }
