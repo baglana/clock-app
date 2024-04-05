@@ -1,7 +1,7 @@
 import "./App.css";
 import Quote from "./components/Quote";
 import Clock from "./components/Clock.tsx";
-import MoreLessButton from "./components/MoreLessButton.tsx";
+import MoreButton from "./components/MoreButton.tsx";
 import Footer from "./components/Footer.tsx";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Quote />
         <main>
           <Clock />
-          <MoreLessButton />
+          <MoreButton />
         </main>
       </div>
       <Footer />
