@@ -1,5 +1,9 @@
+import "../styles/Time.css";
+
 export default function Time() {
-    return (
-        <p>11:37 <span>BST</span></p>
-    )
+  return (
+    <h1 className="time">
+      23:14 <span>BST</span>
+    </h1>
+  );
 }

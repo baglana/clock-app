@@ -1,6 +1,6 @@
 import "./App.css";
 import Quote from "./components/Quote";
-import StatusMessage from "./components/StatusMessage.tsx";
+import Clock from "./components/Clock.tsx";
 import MoreLessButton from "./components/MoreLessButton.tsx";
 import Footer from "./components/Footer.tsx";
 
@@ -10,7 +10,7 @@ function App() {
       <div className="container">
         <Quote />
         <main>
-          <StatusMessage />
+          <Clock />
           <MoreLessButton />
         </main>
       </div>

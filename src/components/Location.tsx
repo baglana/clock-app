@@ -1,5 +1,5 @@
+import "../styles/Location.css";
+
 export default function Location() {
-    return (
-        <p>in LONDON, UK</p>
-    )
+  return <p className="location">in LONDON, UK</p>;
 }

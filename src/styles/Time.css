@@ -1,0 +1,14 @@
+.time {
+  font-size: 6.25rem;
+  font-weight: 700;
+  line-height: 6.25rem; /* 100% */
+  letter-spacing: -0.15625rem;
+
+  & span {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.75rem; /* 186.667% */
+    text-transform: uppercase;
+    letter-spacing: normal;
+  }
+}

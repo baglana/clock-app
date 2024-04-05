@@ -1,10 +1,11 @@
 import Greeting from "./Greeting.tsx";
 import Time from "./Time.tsx";
 import Location from "./Location.tsx";
+import "../styles/Clock.css";
 
-export default function StatusMessage() {
+export default function Clock() {
   return (
-    <article>
+    <article className="clock">
       <Greeting />
       <Time />
       <Location />
