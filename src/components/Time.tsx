@@ -1,9 +1,9 @@
 import "../styles/Time.css";
 
-export default function Time() {
+export default function Time({ hh }) {
   return (
     <h1 className="time">
-      23:14 <span>BST</span>
+      {hh}:14 <span>BST</span>
     </h1>
   );
 }

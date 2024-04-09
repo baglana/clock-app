@@ -1,6 +1,6 @@
 import "../styles/Footer.css";
 
-export default function Footer() {
+export default function Footer({ time }) {
   return (
     <footer className="footer">
       <section>
@@ -9,15 +9,15 @@ export default function Footer() {
       </section>
       <section>
         <h2>Day of the year</h2>
-        <p>295</p>
+        <p>{time.day_of_year}</p>
       </section>
       <section>
         <h2>Day of the week</h2>
-        <p>5</p>
+        <p>{time.day_of_week}</p>
       </section>
       <section>
         <h2>Week number</h2>
-        <p>42</p>
+        <p>{}</p>
       </section>
     </footer>
   );
