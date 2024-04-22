@@ -2,9 +2,10 @@ import { useCallback, useEffect, useState } from "react";
 import { fetchQuote } from "../services";
 import RefreshButton from "./RefreshButton.tsx";
 import "../styles/Quote.css";
+import { Quote as QuoteType } from "../services/fetchQuote/fetchQuote.ts";
 
 export default function Quote() {
-  const [quote, setQuote] = useState({});
+  const [quote, setQuote] = useState<QuoteType>({ author: "", content: "" });
 
   const newQuote = useCallback(async () => {
     try {
@@ -24,8 +25,8 @@ export default function Quote() {
   return (
     <article className="quote">
       <blockquote>
-        <p>“{quote?.content}”</p>
-        <footer>{quote?.author}</footer>
+        <p>“{quote.content}”</p>
+        <footer>{quote.author}</footer>
       </blockquote>
       <RefreshButton onClick={newQuote} />
     </article>

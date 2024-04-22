@@ -6,18 +6,22 @@ type TimeBody = {
 };
 
 async function fetchTime() {
-  const res = await fetch("http://worldtimeapi.org/api/ip", {
-    cache: "no-cache",
-  });
-  if (!res.ok) {
-    await Promise.reject(
-      new Error(`quote fetch error: ${res.status} - ${res.statusText}`),
-    );
+  try {
+    const res = await fetch("http://worldtimeapi.org/api/ip", {
+      cache: "no-cache",
+    });
+    if (!res.ok) {
+      await Promise.reject(
+        new Error(`quote fetch error: ${res.status} - ${res.statusText}`),
+      );
+    }
+
+    const json: TimeBody = await res.json();
+
+    return json;
+  } catch (err) {
+    console.error("err", err);
   }
-
-  const json: TimeBody = await res.json();
-
-  return json;
 }
 
 export default fetchTime;
