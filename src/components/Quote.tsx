@@ -10,7 +10,9 @@ export default function Quote() {
   const newQuote = useCallback(async () => {
     try {
       const fetchedQuote = await fetchQuote();
-      setQuote(fetchedQuote);
+      if (fetchedQuote) {
+        setQuote(fetchedQuote);
+      }
     } catch (err) {
       if (err instanceof Error) {
         alert(err.message);

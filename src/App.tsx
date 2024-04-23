@@ -5,14 +5,22 @@ import MoreButton from "./components/MoreButton.tsx";
 import Footer from "./components/Footer.tsx";
 import { useCallback, useEffect, useState } from "react";
 import { fetchTime } from "./services";
+import { TimeBody as TimeType } from "./services/fetchTime/fetchTime.ts";
 
 function App() {
-  const [time, setTime] = useState({});
+  const [time, setTime] = useState<TimeType>({
+    day_of_week: 1,
+    day_of_year: 1,
+    week_number: 1,
+    unixtime: 0,
+  });
 
   const newTime = useCallback(async () => {
     try {
       const fetchedTime = await fetchTime();
-      setTime(fetchedTime);
+      if (fetchedTime) {
+        setTime(fetchedTime);
+      }
     } catch (err) {
       if (err instanceof Error) {
         alert(err.message);
