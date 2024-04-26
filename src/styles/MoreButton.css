@@ -6,11 +6,12 @@
   letter-spacing: 0.23438rem;
   text-transform: uppercase;
 
+  width: 7.1875rem;
   padding: 0.19rem 0.25rem 0.25rem 1.06rem;
 
   display: flex;
   align-items: center;
-  gap: 0.94rem;
+  justify-content: space-between;
 
   border-style: none;
   border-radius: 28px;

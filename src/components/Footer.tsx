@@ -2,7 +2,7 @@ import "../styles/Footer.css";
 
 export default function Footer({ time }) {
   return (
-    <footer className="footer">
+    <footer id="footer">
       <section>
         <h2>Current timezone</h2>
         <p>Europe/London</p>

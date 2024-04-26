@@ -7,7 +7,7 @@ import { Quote as QuoteType } from "../services/fetchQuote/fetchQuote.ts";
 export default function Quote() {
   const [quote, setQuote] = useState<QuoteType>({ author: "", content: "" });
 
-  const newQuote = useCallback(async () => {
+  const handleClick = useCallback(async () => {
     try {
       const fetchedQuote = await fetchQuote();
       if (fetchedQuote) {
@@ -21,8 +21,8 @@ export default function Quote() {
   }, []);
 
   useEffect(() => {
-    newQuote();
-  }, [newQuote]);
+    handleClick();
+  }, [handleClick]);
 
   return (
     <article className="quote">
@@ -30,7 +30,7 @@ export default function Quote() {
         <p>“{quote.content}”</p>
         <footer>{quote.author}</footer>
       </blockquote>
-      <RefreshButton onClick={newQuote} />
+      <RefreshButton onClick={handleClick} />
     </article>
   );
 }
