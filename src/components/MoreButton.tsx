@@ -11,7 +11,7 @@ export default function MoreButton() {
     const rootChildren = document.querySelectorAll<HTMLElement>("#root>*");
 
     rootChildren.forEach((child) => {
-      child.style.bottom = showMore ? "-16rem" : "0";
+      child.classList.toggle("more");
     });
   }
 
