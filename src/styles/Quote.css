@@ -1,6 +1,10 @@
 .quote {
   display: flex;
 
+  & blockquote {
+    flex-grow: 1;
+  }
+
   & svg {
     flex-shrink: 0;
   }
