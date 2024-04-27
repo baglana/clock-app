@@ -5,16 +5,12 @@
 
   width: 100%;
   height: 16rem;
-  position: absolute;
-  bottom: calc(-1 * var(--footer-height));
 
   padding: 3rem 1.62rem;
-  display: none;
+  display: grid;
 
-  &.more {
-    display: grid;
-    bottom: 0;
-  }
+  position: absolute;
+  bottom: 0;
 
   & > section {
     display: flex;

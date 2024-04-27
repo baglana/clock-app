@@ -14,6 +14,7 @@ function App() {
     week_number: 1,
     unixtime: 0,
   });
+  const [showMore, setShowMore] = useState(false);
 
   const newTime = useCallback(async () => {
     try {
@@ -38,10 +39,10 @@ function App() {
         <Quote />
         <main>
           <Clock time={time} />
-          <MoreButton />
+          <MoreButton showMore={showMore} setShowMore={setShowMore} />
         </main>
       </div>
-      <Footer time={time} />
+      {showMore && <Footer time={time} />}
     </>
   );
 }

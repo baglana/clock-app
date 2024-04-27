@@ -1,18 +1,18 @@
 import MoreButtonIcon from "./MoreButtonIcon.tsx";
 import "../styles/MoreButton.css";
-import { useState } from "react";
 
-export default function MoreButton() {
-  const [showMore, setShowMore] = useState(false);
+export type MoreButtonProps = {
+  showMore: boolean;
+  setShowMore: () => void;
+};
 
+const MoreButton: React.FC<MoreButtonProps> = ({ showMore, setShowMore }) => {
   function handleClick() {
     setShowMore(!showMore);
 
-    const rootChildren = document.querySelectorAll<HTMLElement>("#root>*");
+    const container = document.querySelector<HTMLElement>(".container");
 
-    rootChildren.forEach((child) => {
-      child.classList.toggle("more");
-    });
+    container?.classList.toggle("more");
   }
 
   return (
@@ -21,4 +21,6 @@ export default function MoreButton() {
       <MoreButtonIcon showMore={showMore} />
     </button>
   );
-}
+};
+
+export default MoreButton;
