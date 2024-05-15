@@ -11,7 +11,9 @@ function App() {
   const [time, setTime] = useState<TimeType>({
     day_of_week: 1,
     day_of_year: 1,
+    dst: false,
     week_number: 1,
+    timezone: "",
     unixtime: 0,
   });
   const [showMore, setShowMore] = useState(false);

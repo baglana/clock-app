@@ -1,7 +1,9 @@
 export type TimeBody = {
   day_of_week: number;
   day_of_year: number;
+  dst: boolean;
   week_number: number;
+  timezone: string;
   unixtime: number;
 };
 

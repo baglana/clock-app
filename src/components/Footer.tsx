@@ -5,7 +5,7 @@ export default function Footer({ time }) {
     <footer id="footer">
       <section>
         <h2>Current timezone</h2>
-        <p>Europe/London</p>
+        <p>{time.timezone}</p>
       </section>
       <section>
         <h2>Day of the year</h2>
@@ -17,7 +17,7 @@ export default function Footer({ time }) {
       </section>
       <section>
         <h2>Week number</h2>
-        <p>{}</p>
+        <p>{time.week_number}</p>
       </section>
     </footer>
   );
