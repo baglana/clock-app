@@ -10,10 +10,6 @@
   --color-footer-bg: hsla(0, 0%, 0%, 0.75);
 }
 
-#root > * {
-  border: 1px solid red;
-}
-
 #root {
   --text-color: hsla(0, 0%, 100%, 1);
   --fonts: "Inter Variable", sans-serif;
