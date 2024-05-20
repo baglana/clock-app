@@ -8,7 +8,7 @@ Mentor challenges help you improve your coding skills by building realistic proj
 
 - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
     - [Links](#links)
 - [My process](#my-process)
     - [Built with](#built-with)
@@ -33,11 +33,9 @@ Users should be able to:
 - Be shown the correct greeting and background image based on the time of day they're visiting the site
 - Generate random programming quotes by clicking the refresh icon near the quote
 
-### Screenshot
+### Screenshots
 
-![Mobile layout light](./screenshots/1.png)
-![Mobile layout dark](./screenshots/2.png)
-![Mobile layout dark more](./screenshots/3.png)
+![Mobile layout](./screenshots/123.jpg)
 
 ### Links
 
